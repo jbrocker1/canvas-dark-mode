@@ -18,8 +18,18 @@
 .comm-channel, .grouping, th, .table, .planner-day, .nothingPlannedContainer_hppr
 , .comments, .roster-tab, .rosterUser, .syllabus_assignment, tbody, .day_date, .table, .table-striped, .ic-flash-error,
 span[role=dialog], span[role=dialog] > div, .agenda-wrapper, .agenda-day, .agenda-event__container,
-.event-details, .rubric_title, .content_box {
+.event-details, .rubric_title, .content_box, .navigation-tray-container, .css-vxe90h-view--inlineBlock, .context_list_context,
+.css-14jozxf-view--inlineBlock {
     background-color: #282828 !important;
+}
+
+/*
+ * TODO: calenders bars
+*/
+
+.css-1sr6v3o-text {
+	color: #999 !important;
+    font-weight: bold !important;
 }
 
 .react-rubric tr, .react-rubric th {
@@ -32,12 +42,13 @@ span[role=dialog], span[role=dialog] > div, .agenda-wrapper, .agenda-day, .agend
     color: #888 !important;
 }
 
-body, .header-bar, .ui-tabs-anchor, .quiz-submission, .ig-header, .accessible-toggler, .ic-Input, .ic-DashboardCard__box__header {
+body, .header-bar, .ui-tabs-anchor, .quiz-submission, .ig-header, .accessible-toggler, .ic-Input, .ic-DashboardCard__box__header,
+.ui-widget-header, .ui-widget-content, .css-j68kdy-formFieldLabel {
     background: #1f1f1f !important;
     color: #C7CDD1 !important;
 }
 
-.module-sequence-footer-content, .ic-app-crumbs, #breadcrumbs, .course-list-unpublished-course-row {
+.module-sequence-footer-content, .ic-app-crumbs, #breadcrumbs, .course-list-unpublished-course-row, .rs-section {
     background: #1f1f1f !important;
 }
 
