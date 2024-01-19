@@ -9,8 +9,13 @@
   --ic-brand-global-nav-menu-item__text-color--active: #fff;
   --ic-brand-global-nav-ic-icon-svg-fill--active: #fff;
   --ic-brand-font-color-dark-lightened-15: #C7CDD1;
+  --ic-brand-font-color-dark-lightened-28: #C7CDD1;
   --eHiXd-linkColor: #fff;
 }
+
+/*
+ * TODO: try to get rid of the classes of weird named things. .css-ppw98w-view-cell for example
+*/
 
 .ic-DashboardCard, .ic-DashboardCard__header_content, .header,
 .ic-DashboardCard__action-container, .item-group-container, .ig-row, .header-bar-outer-container
@@ -18,17 +23,22 @@
 .comm-channel, .grouping, th, .table, .planner-day, .nothingPlannedContainer_hppr
 , .comments, .roster-tab, .rosterUser, .syllabus_assignment, tbody, .day_date, .table, .table-striped, .ic-flash-error,
 span[role=dialog], span[role=dialog] > div, .agenda-wrapper, .agenda-day, .agenda-event__container,
-.event-details, .rubric_title, .content_box, .navigation-tray-container, .css-vxe90h-view--inlineBlock, .context_list_context,
-.css-14jozxf-view--inlineBlock {
+.event-details, .rubric_title, .content_box, .navigation-tray-container, .context_list_context, #assignments-student-footer,
+.discussions-v2__wrapper span div, .replies, .discussion-entry-reply-area, .ic-Layout-contentWrapper span div,
+.feature-flag-wrapper table tr td {
     background-color: #282828 !important;
 }
 
-/*
- * TODO: calenders bars
-*/
+.event-details::after {
+    background: linear-gradient(to right, #28282800, #1f1f1fff) !important;
+}
 
-.css-1sr6v3o-text {
-	color: #999 !important;
+.ic-DashboardCard__header-term, .ic-Layout-contentMain p, 
+.discussions-v2__wrapper button, .tray-with-space-for-global-nav li div, input, input::placeholder {
+    color: #999 !important;
+}
+
+.tray-with-space-for-global-nav li div {
     font-weight: bold !important;
 }
 
@@ -43,7 +53,7 @@ span[role=dialog], span[role=dialog] > div, .agenda-wrapper, .agenda-day, .agend
 }
 
 body, .header-bar, .ui-tabs-anchor, .quiz-submission, .ig-header, .accessible-toggler, .ic-Input, .ic-DashboardCard__box__header,
-.ui-widget-header, .ui-widget-content, .css-j68kdy-formFieldLabel {
+.ui-widget-header, .ui-widget-content {
     background: #1f1f1f !important;
     color: #C7CDD1 !important;
 }
@@ -71,9 +81,10 @@ a {
     text-decoration: none !important;
 }
 
-
+svg, .feature-flag-wrapper table td span, .feature-flag-wrapper table td div,
+.feature-flag-wrapper table th, .edit_or_show_data.data_description,
 .status-description, .title, .locked_title, .points_possible_display,  .ig-details__item
-, .name, h2, .comment, td, .score_value, .ic-Login__actions, .ic-Label{
+, .name, h2, .comment, td, .score_value, .ic-Login__actions, .ic-Label, .path{
     color: #C7CDD1 !important;
 }
 
@@ -174,7 +185,7 @@ a {
 .tox .tox-tbtn--active, .tox .tox-mbtn--active,
 .tox .tox-collection--list .tox-collection__item--enabled,
 .tox .tox-split-button .tox-tbtn.tox-split-button__chevron {
-    background-color: #7b7b7b !important;
+    background-color: #6b6b6b !important;
     color: white !important;
 }
 
